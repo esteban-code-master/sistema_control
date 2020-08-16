@@ -1,0 +1,69 @@
+.ventana{
+    position: absolute;
+    display: flex;
+    z-index: 50;
+    width: 100%;
+    height: 100%;
+    background:rgb(0,0,0,0.5);
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.formulario{
+    border-radius: 10px;
+    width: 500px;
+    height: auto;
+    background: white;
+    margin-left: 33%;
+}
+.cerrar{  
+    display: flex;
+    border-bottom: 1px solid black;
+    width: 100%;
+    height: 25px;
+    justify-content:flex-end;
+    box-sizing: border-box;
+}
+.cerrar img{
+    width: 25px;
+    border-top-right-radius:10px;
+}
+.cerrar img:hover{
+    cursor: pointer;
+}
+.controles{
+    padding: 30px;
+}
+h1{
+    margin-bottom: 10px;
+}
+input,select,option{
+    width: 100%;
+    height: 30px;
+    color: black;
+    outline: none;
+    padding: 4px;
+    margin: 9px;
+    box-sizing: border-box;
+}   
+label,h1{
+    color: black;
+}
+.controles input[type="search"]{
+    border-radius: 15px;
+    padding-left: 10    px;
+}
+textarea{
+    width: 100%;
+    height: 50px;
+    padding: 4px;
+    margin: 9px;
+    box-sizing: border-box;
+    resize: none;
+    color:black;
+}
+button{
+    width: 160px;
+    height: 30px;
+    padding: 4px;
+}

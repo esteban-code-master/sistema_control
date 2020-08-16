@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image:url('../img/fondo-login.jpg');
+    background-repeat: no-repeat;
+}
+.icon{
+    width: 36px;
+}
+img{
+    width: 30%;
+}
+.container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 0 40px 0 40px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 500px;
+    grid-template-rows: 80px 1fr 100px;
+    grid-template-areas: "header header"
+                          "caja1 caja2"               
+                          "pie pie";
+}
+.container .info{
+    grid-area: caja1;
+
+}
+.container .login{
+    grid-area: caja2;
+    background: rgba(66, 66, 66, 0.1);
+    border-left: 2px solid black;
+    box-sizing: border-box;
+    padding: 50px 40px 0 40px;
+}
+.icon-contacto{
+    margin-left: 30%;
+}
+.login:nth-child(1){
+    width: 100%;
+}
+input{
+  width: 100%;
+  outline: none;
+  border: none;
+  padding-left: 30px;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+input[type="button"]{
+    height: 35px;
+    background: #2B78E3;
+    color: white;
+    margin-bottom: 50px;
+}
+input[type="submit"]:hover{
+    background:#05647C ;
+    cursor: pointer;
+}
+.icon-container{
+    display: flex;
+    width: 100%;
+    height: 40px;
+    background: white;
+    margin-bottom:20px;
+    border: 1px solid black;
+}
+.icon-container > div{
+    border: 1px solid black;
+} 
+
+.container .info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.info:nth-child(1){
+    font-size: 50px;
+    color: gray;
+}
+
+.info:nth-child(2){
+    width: 50%;
+    background: black;
+}
+
+
+@media screen  and (max-width: 992px){
+    .container{       
+        display: grid;
+        grid-template-columns: 1fr 500px;
+        grid-template-rows: 170px 1fr 100px;
+        grid-template-areas: "header header"
+                              "caja caja"               
+                              "pie pie";
+    }
+    .container .info{
+        grid-area: header;
+    
+    }
+    .container .login{
+        grid-area: caja;        
+    }
+}

@@ -1,0 +1,96 @@
+
+/*estilos consumido para todas las vista*/
+.grid{
+    padding: 20px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 170px auto;
+}
+
+/*estrucutra de todas las vistas*/
+
+.grid .menu-superior{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.caja-info{
+    padding: 10px;
+    background: white;
+    box-sizing: border-box;
+}
+
+/*tabla productos*/
+.caja-info p ,table th , table td{
+    color: black;
+}
+hr{
+    height: 5px;
+    background:#CCCCCC;
+    border: none;
+    border-radius: 10px;
+    margin:5px 0px 5px 0px;
+}
+table{
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+}
+table th{
+    background: #CCCCCC;
+}
+table tr:nth-child(odd){
+ background-color:#EDEDED;
+}
+
+table tr:nth-child(even) {
+    background-color:white
+}
+.caja-info .info{
+    display: flex;
+    text-align: right;
+    justify-content:space-between;
+    padding:5px;
+}
+
+/*estilos de caja menu*/
+
+.caja-menu{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    height: 70px;
+    background: white;
+    border: 3px solid #6EA8DC;
+    align-items: center;
+}
+.caja-menu > img{
+    width: 40px;
+}
+.caja-menu > p{
+    color: black;
+}
+.caja-menu:hover{
+    border: 3px solid #A5DAE7 ;
+    cursor: pointer;
+}
+button{
+    outline: none;
+    background:#063762;   
+    border: 2px solid #F1AD03;
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+button:hover{
+    cursor: pointer;
+    background:#075293;   
+    border: 2px solid #EDC415;
+}

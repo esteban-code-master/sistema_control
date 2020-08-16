@@ -1,0 +1,34 @@
+
+/*estructura del layout principal*/
+.container{    
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 230px 1fr ;
+    grid-template-rows: 50px 50px 1fr;
+    grid-template-areas: "usuario header"
+                          "usuario seccion"
+                          "barra   seccion"
+                          ;
+}
+
+.container .header{
+    grid-area: header;
+    background: #075293;
+}
+.container .barra-izquierda{
+    grid-area: barra;
+    background:#212C31;
+}
+.container .usuario{
+    grid-area: usuario;
+    background: #063762;
+}
+.container .seccion{
+    grid-area: seccion;
+    background:#DDDDDD;
+}
+
+
+/*pantallas responsivas*/

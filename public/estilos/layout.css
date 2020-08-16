@@ -1,0 +1,110 @@
+/*estilos generales del layout principal*/
+
+*{
+    margin: 0;
+    padding: 0;    
+    color:#C9CACA;
+    font-size: 20px;
+}
+img{
+    width: 20px;
+}
+
+/*estilos de header*/
+.header {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.header .fecha{
+    padding: 10px 0px 0px 40px;
+    width: 80%;
+    box-sizing: border-box;
+}
+.pventa a , .admin a {
+    text-decoration: none;
+}
+.pventa a,.admin a,.salir{
+    padding: 10px;
+    display: flex;
+    box-sizing: border-box;
+}
+.pventa a p,.admin a p,.salir p{
+    margin-left: 8px;
+    text-align: center;
+    align-self: center;
+    box-sizing: border-box;
+} 
+.pventa:hover,.admin:hover,.salir:hover{
+    cursor: pointer;
+    background: #134F5C;
+}
+
+/*cuadro usuario*/
+.usuario{
+    display: flex;
+    flex-wrap:nowrap;
+}
+.usuario img{
+    margin: 3px 10px 0px 0px;
+    width: 90px;
+    box-sizing: border-box;
+}
+.circule{
+    display: flex;
+}
+.circule >div{
+    width: 10px;
+    height: 10px;
+    border-radius: 100px;
+    background: seagreen;
+    margin: 8px 4px 0px 0px;
+    box-sizing: border-box;
+}
+
+/*barra - lateral*/
+.agrupar{
+    padding: 10px;
+    display: flex;
+    flex-wrap:nowrap;
+    margin-right:30px;
+}
+.agrupar > img{
+    margin-right:10px;
+}
+.menu{
+    padding: 10px;
+}
+.menu ul li{
+    text-decoration: none;
+    list-style: none;
+    margin: 14px 0px 0px 0px;
+    min-height: 40px;
+    height: auto;
+    box-sizing: border-box;
+}
+.menu ul li:hover{
+    cursor: pointer;
+    background:#134F5C;
+    color: white; 
+}
+
+ul li div a{
+    font-size: 18px;
+    text-decoration: none;
+}
+ul ul li a{
+    font-size: 15px;
+    padding: 10px 0px 10px 40px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+ul ul {
+    width: 100%;
+    background: #212C31;
+    display:none;
+}
+
+ul #hide li:hover{
+    background:#507B85;
+}
